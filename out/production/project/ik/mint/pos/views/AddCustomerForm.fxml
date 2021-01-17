@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@../../../../stlesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.mint.pos.controller.AddCustomerFormController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="800.0" style="-fx-background-color: lime;">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../asset/PicsArt_09-15-11.17.59.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="100.0" text="MINT">
+               <font>
+                  <Font name="Ebrima Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="100.0" text="BANK">
+               <font>
+                  <Font name="Ebrima Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="506.0" layoutY="8.0" prefHeight="31.0" prefWidth="153.0" text="&quot;Mint Banking in the">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="467.0" layoutY="29.0" prefHeight="31.0" prefWidth="229.0" text="Sri Lankan Developmental State&quot;">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon iconName="CLOSE" layoutX="782.0" layoutY="16.0" onMouseClicked="#closeBtn" size="1.5em" stroke="WHITE" styleClass="closeBtn" />
+         </children>
+      </Pane>
+      <Pane layoutY="75.0" prefHeight="525.0" prefWidth="125.0" style="-fx-background-color: lime;">
+         <children>
+            <JFXButton fx:id="btnCreate" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCreateOnAction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#121212" styleClass="createBtn" text="Create Account">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCashDeposit" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCashDepositOnaction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#121212" styleClass="createBtn" text="Cash Deposit">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCashWithdraw" layoutY="143.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCashwithdrawOnaction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#121212" styleClass="createBtn" text="Cash Withdraw">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCard" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCardOnaction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#121212" styleClass="createBtn" text="Card Section">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnMoneyTransfer" layoutY="253.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnMoneyTransferOnAction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#121212" styleClass="createBtn" text="Money Transfer">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="AddCustomer" layoutX="123.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="675.0">
+         <children>
+            <JFXTextField fx:id="txtDate" focusColor="#3fea10" labelFloat="true" layoutX="530.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="139.0" promptText="Date" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFName" focusColor="#3fea10" labelFloat="true" layoutX="46.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Frist Name" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerId" focusColor="#3fea10" labelFloat="true" layoutX="12.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="139.0" promptText="Customer Id Number" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbStatus" focusColor="#3fea10" layoutX="46.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Status" unFocusColor="#3fea10">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtLName" focusColor="#3fea10" labelFloat="true" layoutX="45.0" layoutY="174.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Last Name" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="TtxtCity" focusColor="#3fea10" labelFloat="true" layoutX="45.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="City" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" focusColor="#3fea10" labelFloat="true" layoutX="46.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Address" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" focusColor="#3fea10" labelFloat="true" layoutX="46.0" layoutY="336.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Email Address" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPhoneNo" focusColor="#3fea10" labelFloat="true" layoutX="47.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Phone No" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="65.0" layoutY="451.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnRegisterOnAction" prefHeight="30.0" prefWidth="100.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Register">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtAccountnumber" focusColor="#3fea10" labelFloat="true" layoutX="395.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Account Number" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStatus" focusColor="#3fea10" labelFloat="true" layoutX="395.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Status" styleClass="text" text="ACTIVATE" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="371.0" layoutY="96.0" text="Create Account For Registered Customer." textFill="#a3a3a3">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbAccountType" focusColor="#3fea10" layoutX="395.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Account Type" unFocusColor="#3fea10">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <JFXButton fx:id="btnCreateAccount" buttonType="RAISED" layoutX="429.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCreateAccountOnAction" prefHeight="30.0" prefWidth="183.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Create Account">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="183.0" layoutY="493.0" prefHeight="18.0" prefWidth="482.0" text="If the customer is not regisyered,the customer must register first." textFill="#a3a3a3">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="493.0" prefHeight="18.0" prefWidth="66.0" text="NOTE : " textFill="#393838">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

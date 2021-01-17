@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CashDeposit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="675.0" styleClass="parent" stylesheets="@../../../../stlesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.mint.pos.controller.MoneyTransferFormController">
+   <children>
+      <Label layoutX="264.0" layoutY="21.0" text="Money Transfer" textFill="#514c4c">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDate" focusColor="#3fea10" labelFloat="true" layoutX="498.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="157.0" promptText="Date" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTime" focusColor="#3fea10" labelFloat="true" layoutX="498.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="157.0" promptText="Time" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAccountnumber" alignment="CENTER" focusColor="#3fea10" labelFloat="true" layoutX="23.0" layoutY="124.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#txtAccountnumberOnAction" prefHeight="35.0" prefWidth="175.0" promptText="Account Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerId" focusColor="#3fea10" labelFloat="true" layoutX="23.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Customer Id Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="#3fea10" labelFloat="true" layoutX="23.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Customer Name" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBalance" alignment="CENTER" focusColor="#3fea10" labelFloat="true" layoutX="411.0" layoutY="435.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="250.0" promptText="Account Balance" styleClass="text" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTransfer" alignment="CENTER" focusColor="#3fea10" labelFloat="true" layoutX="83.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#txtTranferOnAction" prefHeight="67.0" prefWidth="555.0" promptText="Tranfer Amount" styleClass="text" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnTransfer" buttonType="RAISED" layoutX="61.0" layoutY="454.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnTransferOnAction" prefHeight="30.0" prefWidth="157.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Money Transfer">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtTranferId" focusColor="#3fea10" labelFloat="true" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="157.0" promptText="Tranfer Id :" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAccountType" focusColor="#3fea10" labelFloat="true" layoutX="23.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Account Type" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTransfernumber" alignment="CENTER" focusColor="#3fea10" labelFloat="true" layoutX="442.0" layoutY="124.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#txtTransfernumberOnAction" prefHeight="35.0" prefWidth="223.0" promptText="Transfer Account Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerIdT" focusColor="#3fea10" labelFloat="true" layoutX="480.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Customer Id Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNameT" focusColor="#3fea10" labelFloat="true" layoutX="480.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Customer Name" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAccountTypeT" focusColor="#3fea10" labelFloat="true" layoutX="480.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" promptText="Account Type" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

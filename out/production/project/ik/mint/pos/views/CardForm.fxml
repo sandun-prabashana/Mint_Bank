@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Card" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="675.0" stylesheets="@../../../../stlesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.mint.pos.controller.CardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="21.0" prefHeight="31.0" prefWidth="170.0" text="Card Section" textFill="#514c4c">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="69.0" prefHeight="18.0" prefWidth="307.0" text="Creating a card for a cardless saving account" textFill="#a3a3a3">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDate" focusColor="#3fea10" labelFloat="true" layoutX="497.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="139.0" promptText="Date" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAccountnumber" focusColor="#3fea10" labelFloat="true" layoutX="33.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Account Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCardNumber" focusColor="#3fea10" labelFloat="true" layoutX="33.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Card Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmdCardType" focusColor="#3fea10" layoutX="33.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Card Type" unFocusColor="#3fea10">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtDateEx" focusColor="#3fea10" labelFloat="true" layoutX="33.0" layoutY="288.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Date Of Exprie" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStatus" focusColor="#3fea10" labelFloat="true" layoutX="33.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Status" styleClass="text" text="ACTIVATE" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" focusColor="#3fea10" labelFloat="true" layoutX="33.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" promptText="Password" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnCreateCard" buttonType="RAISED" layoutX="65.0" layoutY="463.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCreateCardOnAction" prefHeight="30.0" prefWidth="125.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Create Card">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="422.0" layoutY="111.0" prefHeight="18.0" prefWidth="161.0" text="Change Card Password" textFill="#a3a3a3">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCardNumberPass" focusColor="#3fea10" labelFloat="true" layoutX="404.0" layoutY="145.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#txtCardNumberPassOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Card Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCurrentP" focusColor="#3fea10" labelFloat="true" layoutX="404.0" layoutY="185.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Current Password" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPasswordP" focusColor="#3fea10" labelFloat="true" layoutX="404.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="New Password" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="461.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="84.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Save">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="407.0" layoutY="321.0" prefHeight="18.0" prefWidth="200.0" text="Card Deactivate Or Activate" textFill="#a3a3a3">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCardNo" focusColor="#3fea10" labelFloat="true" layoutX="404.0" layoutY="355.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#txtCardNoOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Card Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustId" focusColor="#3fea10" labelFloat="true" layoutX="404.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Customer Id Number" unFocusColor="#3fea10">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnDeactivate" buttonType="RAISED" layoutX="463.0" layoutY="475.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnDeactivateOnAction" prefHeight="30.0" prefWidth="108.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Deactivate">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmdStatues" focusColor="#3fea10" layoutX="404.0" layoutY="435.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Statues" unFocusColor="#3fea10">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXComboBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="parent" stylesheets="@../../../../stlesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.mint.pos.controller.ForgetPasswordFormController">
+   <children>
+      <FontAwesomeIcon iconName="CLOSE" layoutX="380.0" layoutY="18.0" onMouseClicked="#closeBtn1" size="1.5em" styleClass="closeBtn" text="" />
+      <FontAwesomeIcon iconName="ARROW_LEFT" layoutX="2.0" layoutY="17.0" onMouseClicked="#backBtn" size="1.5em" styleClass="BackBtn" text="" />
+   </children>
+</AnchorPane>

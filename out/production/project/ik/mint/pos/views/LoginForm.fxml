@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.mint.pos.controller.LoginFormController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: lime;">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="272.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../asset/PicsArt_09-15-11.17.59.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Welcome To ">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="155.0" layoutY="384.0" text="MINT BANK">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></VBox>
+      <Pane fx:id="contentArea" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFF;" styleClass="loginBtn" stylesheets="@../../../../stlesheet.css">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="189.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../asset/PicsArt_09-15-11.17.59.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="146.0" text="Welcome Back,">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="175.0" text="Sign in to continue" textFill="#a3a3a3">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserId" focusColor="#3fea10" labelFloat="true" layoutX="64.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="User Id" text="200010101" unFocusColor="#3fea10">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#3fea10" labelFloat="true" layoutX="64.0" layoutY="313.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" text="ijse" unFocusColor="#3fea10">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="248.0" layoutY="378.0" onMouseClicked="#forgetBtn" styleClass="forgetBtn" stylesheets="@../../../../stlesheet.css" text="Forget Password?" textFill="#a3a3a3">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="63.0" layoutY="448.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnLoginOnAction" prefHeight="50.0" prefWidth="300.0" ripplerFill="#3fea10" styleClass="loginBtn" text="Login">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIcon iconName="CLOSE" layoutX="380.0" layoutY="18.0" onMouseClicked="#closeBtn" size="1.5em" stroke="WHITE" styleClass="closeBtn" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
